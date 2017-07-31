@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       skipResources: [],
       languages: '*',
       skipLanguages: [],
-      endpoint: 'http://www.transifex.com/api/2',
+      endpoint: 'https://www.transifex.com/api/2',
       project: this.target,
       reviewed: this.flags.reviewed,
       mode: "json",
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
     this.options = this.options({
       resources: '*',
       sourceLanguage: '', // assumes no _en extension for source. use "en" to match with a specific extension
-      endpoint: 'http://www.transifex.com/api/2',
+      endpoint: 'https://www.transifex.com/api/2',
       project: this.target,
       reviewed: this.flags.reviewed,
       mode: "json",
